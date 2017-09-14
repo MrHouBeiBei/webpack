@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= htmlWebpackPlugin.options.tlte %></title>  
+        <!-- 获取配置中的titlte -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="/dist/js/bundle.js"></script>
+    </head>
+    <body>
+
+        <%= htmlWebpackPlugin.options.date %>
+    
+        <!-- 遍历 -->
+        <% for (var key in htmlWebpackPlugin){ %>
+            <%= key %>
+        <% } %>
+    </body>
+</html>
